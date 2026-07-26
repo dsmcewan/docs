@@ -24,6 +24,14 @@ This command installs Mintlify's documentation skill for your configured AI tool
 
 See the [AI tools guides](/ai-tools) for tool-specific setup.
 
+### AI-native workflow
+
+This repo is set up so any AI coding agent gets the same context automatically:
+
+- **`AGENTS.md`** — project terminology, style rules, the add-a-page workflow, and an inventory of the available agent tooling. `CLAUDE.md` imports it so Claude Code and Codex share one source of truth.
+- **`.mcp.json`** — wires in the Mintlify editing MCP (`mcp.mintlify.com`) and docs-knowledge MCP so agents can edit content and look up Mintlify usage without manual setup.
+- **`.claude/hooks/session-start.sh`** — installs the `mint` CLI in Claude Code on the web sessions so agents can preview (`mint dev`) and validate (`mint broken-links`) docs.
+
 ## Development
 
 Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
