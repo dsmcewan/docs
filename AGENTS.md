@@ -6,7 +6,7 @@
 - Pages are MDX files with YAML frontmatter (`title`, `description`).
 - Site configuration lives in `docs.json`; navigation is defined under `navigation.pages`.
 - Use the Mintlify MCP server, `https://mcp.mintlify.com`, to edit content and settings via MCP.
-- Use the Mintlify docs MCP server, `https://www.mintlify.com/docs/mcp`, to query information about using Mintlify via MCP.
+- Use the Mintlify docs MCP server, `https://mintlify.com/docs/mcp`, to query information about using Mintlify via MCP.
 
 ## Terminology
 
@@ -61,7 +61,6 @@ Prefer these terms for consistency across the docs:
 Tooling wired into this repo for AI-assisted docs work, and when to use each:
 
 - **Mintlify editing MCP** (`https://mcp.mintlify.com`) — edit page content and site settings programmatically. Configured in `.mcp.json`.
-- **Mintlify docs-knowledge MCP** (`https://www.mintlify.com/docs/mcp`) — look up how to use Mintlify components, frontmatter, and `docs.json` configuration. Configured in `.mcp.json`.
+- **Mintlify docs-knowledge MCP** (`https://mintlify.com/docs/mcp`) — look up how to use Mintlify components, frontmatter, and `docs.json` configuration. Configured in `.mcp.json`.
 - **Mintlify docs skill** (`npx skills add https://mintlify.com/docs`) — local component reference, writing standards, and workflow guidance for the AI tool.
-- **`doc-coauthoring` skill** — structured workflow for co-authoring longer docs, proposals, and specs.
 - **`mint` CLI** — local preview (`mint dev`) and validation (`mint broken-links`), installed by the SessionStart hook.
