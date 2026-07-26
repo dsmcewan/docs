@@ -63,4 +63,5 @@ Tooling wired into this repo for AI-assisted docs work, and when to use each:
 - **Mintlify editing MCP** (`https://mcp.mintlify.com`) — edit page content and site settings programmatically. Configured in `.mcp.json`.
 - **Mintlify docs-knowledge MCP** (`https://mintlify.com/docs/mcp`) — look up how to use Mintlify components, frontmatter, and `docs.json` configuration. Configured in `.mcp.json`.
 - **Mintlify docs skill** (`npx skills add https://mintlify.com/docs`) — local component reference, writing standards, and workflow guidance for the AI tool.
+- **Bundled skills** (`.claude/skills/` and `.agents/skills/`) — installed from [`vercel-labs/agent-skills`](https://github.com/vercel-labs/agent-skills) and tracked in `skills-lock.json`. Most relevant here: `writing-guidelines` (review docs prose for voice/tone/style) and `web-design-guidelines` (review UI code for Web Interface Guidelines). Manage with `npx skills` (`add` / `remove` / `update` / `list`).
 - **`mint` CLI** — local preview (`mint dev`) and validation (`mint broken-links`), installed by the SessionStart hook.
