@@ -6,7 +6,7 @@
     },
     "mintlify-docs": {
       "type": "http",
-      "url": "https://www.mintlify.com/docs/mcp"
+      "url": "https://mintlify.com/docs/mcp"
     }
   }
 }
