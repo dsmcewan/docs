@@ -1,0 +1,8 @@
+# Vendored third-party agent skills (installed from vercel-labs/agent-skills).
+# Mark as vendored so GitHub excludes them from language statistics and
+# code-scanning language detection, and collapses them in diffs. This keeps
+# the repo from being misclassified as JavaScript by its bundled skill code.
+# Scope is limited to the skill trees — .claude/settings.json and
+# .claude/hooks/ are first-party config and stay counted.
+.claude/skills/** linguist-vendored
+.agents/skills/** linguist-vendored
